@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasad Gaikwad | Embedded Systems Engineer</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* ===== Animations ===== */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Header ===== */
+header {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 { font-size: 46px; }
+header span { color: #38bdf8; }
+
+header p {
+  max-width: 820px;
+  margin: 20px auto;
+  font-size: 20px;
+  color: #94a3b8;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-5px);
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  border-left: 5px solid #38bdf8;
+  padding-left: 15px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(56,189,248,0.15);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(56,189,248,0.25);
+}
+
+/* ===== Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ===== Icons ===== */
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <h1>Prasad <span>Gaikwad</span></h1>
+  <p>
+    Embedded Systems Engineer focused on firmware development, real-time systems,
+    and hardware-software co-design for EV, Automotive, and Industrial applications.
+  </p>
+
+  <a class="btn" href="resume.pdf" download>Download Resume</a>
+  <a class="btn" href="https://www.linkedin.com/in/prasadgaikwad04/" target="_blank">LinkedIn</a>
+  <a class="btn" href="https://github.com/GaikwadPrasad" target="_blank">GitHub</a>
+  <a class="btn" href="mailto:gaikwadprasad109@gmail.com">Email Me</a>
+</header>
+
+<!-- ENGINEER SUMMARY -->
+<section>
+<h2>Engineering Profile</h2>
+<div class="card">
+Embedded Systems Engineer with hands-on expertise in STM32-based firmware,
+battery management electronics, industrial sensing hardware, and IoT systems.
+Strong focus on system reliability, hardware validation, and real-world deployment.
+</div>
+</section>
+
+<!-- TECH STACK -->
+<section>
+<h2>Technology Stack</h2>
+<div class="grid">
+<div class="card">
+<span class="icon">🧠</span>
+<b>Firmware & RTOS</b><br>
+Embedded C, FreeRTOS, Bare-metal, ISR design, Peripheral drivers
+</div>
+
+<div class="card">
+<span class="icon">🔌</span>
+<b>Microcontrollers</b><br>
+STM32, ESP32, Arduino, 8051, PIC16F877A, NodeMCU
+</div>
+
+<div class="card">
+<span class="icon">📡</span>
+<b>Connectivity</b><br>
+IoT, Wi-Fi, WebSocket, Sensor interfacing, Data acquisition
+</div>
+
+<div class="card">
+<span class="icon">🛠️</span>
+<b>Hardware & Tools</b><br>
+PCB Design, PCBA, STM32CubeIDE, Keil, MPLAB X, Proteus, ORCAD
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Highlighted Engineering Projects</h2>
+
+<div class="card">
+<b>IN-FERO Shield – Smart Battery Management System</b><br><br>
+<b>Engineering Focus:</b><br>
+• Battery health monitoring & thermal protection<br>
+• Relay-based charge/discharge logic<br>
+• Embedded control for EV & energy storage systems
+</div>
+
+<div class="card">
+<b>Green Power Vehicle – Dual Battery EV System</b><br><br>
+<b>Engineering Focus:</b><br>
+• Automatic battery switching logic<br>
+• MPPT boost converter integration<br>
+• Awarded DIPEX 2023 – State Level Winner
+</div>
+
+<div class="card">
+<b>AGRI-Breeze – Automated Grain Dryer</b><br><br>
+<b>Engineering Focus:</b><br>
+• Temperature & humidity closed-loop control<br>
+• Multi-sensor embedded automation<br>
+• Rural-ready low-cost hardware design
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Professional Timeline</h2>
+
+<div class="card">
+<b>2025 – Present | Embedded Firmware Intern – VICHARAK</b><br>
+Firmware development on Shrike MCU, RP2040 FPGA flashing,
+ESP32-S3, IoT networking, Embedded C systems.
+</div>
+
+<div class="card">
+<b>2024 – 2025 | R&D Intern – Wavenxd Technologies</b><br>
+STM32-based industrial vibration sensing hardware,
+PCB design, testing, and system validation.
+</div>
+
+<div class="card">
+<b>2023 | Electronics Intern – Maker’s Bench</b><br>
+Circuit testing, debugging, and solar robot electronics.
+</div>
+</section>
+
+<!-- LEADERSHIP -->
+<section>
+<h2>Leadership & Certifications</h2>
+<div class="card">
+• Teaching Head – AI & Robotics Club (KIT Kolhapur)<br>
+• MICROCHIP Embedded Systems Virtual Internship<br>
+• Multiple National & State-level Project Competitions
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact</h2>
+<div class="card">
+📧 <a href="mailto:gaikwadprasad109@gmail.com" style="color:#38bdf8;">gaikwadprasad109@gmail.com</a><br>
+📞 +91 9158273881
+</div>
+</section>
+
+<footer>
+© 2026 Prasad Gaikwad | Embedded Systems Engineer
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const sections = document.querySelectorAll("section");
+const reveal = () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+};
+window.addEventListener("scroll", reveal);
+reveal();
+</script>
+
+</body>
+</html>
+
